@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hitungan Mundur</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm fixed-top">
+        <div class="container-md">
+          <a class="navbar-brand" href="file:///D:/2/web/Website.html#">Sahrul Muhammad Saputra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="file:///D:/2/web/Website.html#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:///D:/2/web/Kalkulator/index.html">Program Kalkulator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Random Password Generator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login (Coming Soon)</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir navbar -->
+
+    <div class="container">
+        <h2><span>Hitungan Mundur Menuju Tahun</span> 2023</h2>
+    <div class="countdown">
+        <div id="hari">NA</div>
+        <div id="jam">NA</div>
+        <div id="menit">NA</div>
+        <div id="detik">NA</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        var countDate = new Date('Jan 01 2023 00:00:00').getTime();
+        
+        function newYear(){
+            var now = new Date().getTime();
+            gap = countDate - now;
+        
+            var detik = 1000;
+            var menit = detik * 60;
+            var jam = menit * 60;
+            var hari = jam * 24;
+        
+            var h = Math.floor(gap / (hari));
+            var j = Math.floor( (gap % (hari)) / (jam) );
+            var m = Math.floor( (gap % (jam))  / (menit) );
+            var d = Math.floor( (gap % (menit))  / (detik) );
+        
+            document.getElementById('hari').innerText = h;
+            document.getElementById('jam').innerText = j;
+            document.getElementById('menit').innerText = m;
+            document.getElementById('detik').innerText = d;
+        }
+        
+        setInterval( function(){
+            newYear();
+        }, 1000);
+        
+        </script>
+
+         <!-- Footer -->
+         <section id="footer">
+          <footer class="text-black-50 text-center fixed-bottom">
+            <p>Design By <a href="https://www.instagram.com/sahrulms_/" class="text-black-50 fw-bold" >Sahrul Muhammad Saputra</a>
+            </p>
+          </footer>
+        </section>
+            <!-- Akhir Footer -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
