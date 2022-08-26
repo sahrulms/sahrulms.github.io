@@ -1,0 +1,18 @@
+.temp {
+    border-radius: 10px;
+    color: rgb(2, 2, 2); 
+    display: inline-block; 
+    padding: 10px 8px;
+}
+
+body {
+    background-color: #9847; 
+    background-size: cover; 
+    height: 100vh; 
+    overflow-y: hidden;
+    padding-top: 9rem;
+}
+
+.footer h6 {
+    font-weight: 200;
+}
