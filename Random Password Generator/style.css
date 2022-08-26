@@ -21,7 +21,7 @@ button {
 	width: 400px;
 	height: 600px;
 	padding: 10px 25px;
-	background: #0a0e31;
+	background: #271a53;
 	border-radius: 10px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
 	font-family: "Montserrat";
@@ -217,7 +217,7 @@ button {
 	background: #fff;
 }
 .setting input:checked + label:before {
-	background: #5d68e2;
+	background: #312b8d;
 	transition: all 150ms cubic-bezier(0, 0, 0, 0.1);
 }
 .setting input:checked + label:after {
@@ -244,7 +244,7 @@ button {
 	border-radius: 8px;
 	color: #fff;
 	border: none;
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-image: linear-gradient(135deg, #438843 0%, #175172 100%);
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-transform: uppercase;
