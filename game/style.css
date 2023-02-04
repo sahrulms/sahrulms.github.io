@@ -1,0 +1,114 @@
+body {
+    background-color: #9847;
+  }
+  
+  .board {
+    border-collapse: collapse;
+    margin: 70px auto;
+    font-size: 36px;
+  }
+  
+  .board td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    background-color: #fff;
+  }
+  
+  #reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #light-mode-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#dark-mode-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+  #reset-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .light-mode {
+    background-color: #9847;
+  }
+  
+  .light-mode .board {
+    background-color: #fff;
+  }
+  
+  .light-mode #reset-button {
+    background-color: #4CAF50;
+  }
+  
+  .light-mode #reset-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+  }
+  
+  .dark-mode .board {
+    background-color: #444;
+  }
+  
+  .dark-mode td {
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .dark-mode #reset-button {
+    background-color: #00bcd4;
+  }
+  
+  .dark-mode #reset-button:hover {
+    background-color: #008ba3;
+  }
+  
+  .dark-mode .board td {
+    color: rgb(0, 0, 0);
+  }
+  
+  .dark-mode .board {
+    border: 1px solid #fff;
+  }
+  
+  .game-controls {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .control-label {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
