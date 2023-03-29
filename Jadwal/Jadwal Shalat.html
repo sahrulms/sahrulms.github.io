@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <title>Jadwal Sholat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+  <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://sahrulms.github.io/index.html">Sahrul Muhammad Saputra</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#About">Tentang Website</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#kontak">Kontak</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-auto" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fitur - Fitur Yang Tersedia Di Website
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/Kalkulator/index.html">Program Kalkulator</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/Random Password Generator/index.html">Random Password Generator</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/Cuntdown/index.html">Hitungan Mundur 2024</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/Stopwatch/index.html">Stopwatch</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/Cuaca/index.html">Cek Cuaca</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/game/game.html">Tic Tac Toe</a></li>
+                      <li><a class="dropdown-item" href="https://sahrulms.github.io/game/Jadwal Shalat.html">Jadwal Shalat</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Akhir navbar -->
+          
+    <div class="container mt-5">
+
+        <div class=" mb-3">
+            <input type="text" class="form-control cari-kota" placeholder="Cari Kota..." aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+          </div>
+
+          <ul class="list-group mt-3 hidden-list nama-list-kota">
+            <!-- <a href="#" class="list-group-item list-group-item-action">Bandung</a>
+            <a href="#" class="list-group-item list-group-item-action">Jakarta</a>
+            <a href="#" class="list-group-item list-group-item-action">Surabaya</a> -->
+          </ul>
+      
+
+          <div class="card mt-3 ">
+            <div class="card-header">
+              <h4 class="text-center">Jadwal Sholat</h4>
+            </div>
+            <div class="card-body">
+              <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg> <span id="judul-kota">KOTA</span> </p>
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Imsak
+                  <span class="badge bg-primary rounded-pill Imsak">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Subuh
+                  <span class="badge bg-primary rounded-pill Subuh">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Terbit
+                  <span class="badge bg-primary rounded-pill Terbit">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Dzuhur
+                  <span class="badge bg-primary rounded-pill Dzuhur">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Ashar
+                  <span class="badge bg-primary rounded-pill Ashar">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Maghrib
+                  <span class="badge bg-primary rounded-pill Maghrib">Loading</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Isya
+                  <span class="badge bg-primary rounded-pill Isya">Loading</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted tanggal">
+              12 April 2022
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+     <!-- Footer -->
+     <section id="footer">
+        <footer class="text-black-50 text-center fixed-bottom">
+          <p>Design By <a href="https://www.instagram.com/sahrulms_/" class="text-black-50 fw-bold" >Sahrul Muhammad Saputra</a> <i class="bi bi-windows"></i></p>
+        </footer>
+      </section>
+          <!-- Akhir Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
