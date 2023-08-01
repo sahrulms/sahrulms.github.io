@@ -98,16 +98,16 @@ body{
 }
 .text-input textarea::-webkit-scrollbar-track,
 .controls .row select::-webkit-scrollbar-track{
-  background: #fff;
+  background: #000000;
 }
 .text-input textarea::-webkit-scrollbar-thumb{
-  background: #ddd;
+  background: #000000;
   border-radius: 8px;
 }
 .controls .row select::-webkit-scrollbar-thumb{
   background: #999;
   border-radius: 8px;
-  border-right: 2px solid #ffffff;
+  border-right: 2px solid #000000;
 }
 .controls .exchange{
   color: #adadad;
@@ -142,7 +142,7 @@ body{
   }
   .text-input .to-text{
     border-left: 0px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #000000;
   }
   .text-input textarea{
     height: 200px;
